@@ -1,5 +1,9 @@
 # Dictionary Examples by zhung
 
+Let's start from the home page of this respository.
+
+[Browse All Examples](https://ukyouz.github.io/dictionary/)
+
 ## Full Dictionary Examples
 
 ### 1. 漢日韓越－英文 辭典
