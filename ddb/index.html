@@ -1,0 +1,203 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Digital Dictionary of Buddhism</title>
+    <link rel="stylesheet" href="../css/shared.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/shared-ddb.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/button.css" type="text/css"/>
+    <script type="text/javascript">
+	//<![CDATA[
+	    function toggle(id) {
+	    	element = document.getElementById(id);
+	    	if (element.style.display == 'none') {
+				element.style.display = 'block'; 
+			} else {
+				element.style.display = 'none';
+			}
+	    }
+	    //]]>
+    </script>
+    <style>
+    	/* main style */
+    	h1 {font-size: 2.5em;}
+    	header {text-align: center; padding: 1.7em 0;}
+    	header div {padding: 0;}
+    	
+    	.grid-5col {overflow: visible;}
+    	.grid-5col .col {margin-bottom: 1.7em;}
+    	.grid-5col .col div {position: absolute; z-index: 9;}
+    	#dict-access {text-align: center;}
+    	#dict-access .col{text-align: left; position: relative;}
+    	#dict-access .col a {display: block; width: 100%;}
+    	#dict-access .col div {border: 1px solid silver; right: 0; left: 0; background: white; padding: 0 .5em; box-shadow: 0 0 10px #eee;}
+    </style>
+</head>
+<body>
+    <header>
+	    <div class="section-content">
+	        <h1>電子佛教辭典</h1>
+	        <p>Digital Dictionary of Buddhism</p>
+	    </div>
+    </header>
+    <section id="dict-access">
+        <div class="section-content">
+            <form method="get" action="http://www.buddhism-dict.net/cgi-bin/search-ddb4.pl" onsubmit="if(this.Terms.value=='意'){this.action='/ddb/b610f.html'};">
+                <input name="Terms" size="55" maxlength="200" required autofocus placeholder="意" value="意"/>
+                <input type="submit" value="Search" class="gbw"/>
+            </form>
+        </div>
+        <div class="section-content grid-5col">
+			<div class="col">
+                <p><a href="rad-stroke/radical-index.html">Radical (部首)</a></p>
+			</div>
+			<div class="col">
+                <p class="tight"><a href="rad-stroke/stroke-index.html">Total Strokes (總畫)</a></p>
+			</div>
+			<div class="col">
+                <p onclick="toggle('termz');return false;"><a href="#">Terms(+)</a></p>
+                <div id="termz" style="display: none">
+					<p class="plain"><a href="#">English</a></p>
+					<p class="plain"><a href="#">Sanskrit</a></p>
+					<p class="plain"><a href="#">Pali</a></p>
+					<p class="plain"><a href="#">Tibetan</a></p>
+                </div>
+			</div>
+			<div class="col">
+                <p onclick="toggle('texts');return false;"><a href="#">Texts(+)</a></p>
+                <div id="texts" style="display: none">
+					<p class="plain"><a href="#">Taishō Canon</a></p>
+					<p class="plain"><a href="#">Indian</a></p>
+					<p class="plain"><a href="#">Chinese</a></p>
+					<p class="plain"><a href="#">Korean</a></p>
+					<p class="plain"><a href="#">Japanese</a></p>
+					<p class="plain"><a href="#">Tibetan</a></p>
+					<p class="plain"><a href="#">English Titles</a></p>
+                </div>
+			</div>
+			<div class="col">
+                <p onclick="toggle('persons');return false;"><a href="#">Persons(+)</a></p>
+                <div id="persons" style="display: none">
+					<p class="plain"><a href="#">India</a></p>
+					<p class="plain"><a href="#">China</a></p>
+					<p class="plain"><a href="#">Korea</a></p>
+					<p class="plain"><a href="#">Japan</a></p>
+					<p class="plain"><a href="#">Tibet</a></p>
+                </div>
+			</div>
+			<div class="col">
+                <p onclick="toggle('temples');return false;"><a href="#">Temples(+)</a></p>
+                <div id="temples" style="display: none">
+					<p class="plain"><a href="#">India</a></p>
+					<p class="plain"><a href="#">China</a></p>
+					<p class="plain"><a href="#">Korea</a></p>
+					<p class="plain"><a href="#">Japan</a></p>
+                </div>
+			</div>
+			<div class="col">
+                <p onclick="toggle('schools');return false;"><a href="#">Schools(+)</a></p>
+                <div id="schools" style="display: none">
+					<p class="plain"><a href="#">India</a></p>
+					<p class="plain"><a href="#">China</a></p>
+					<p class="plain"><a href="#">Korea</a></p>
+					<p class="plain"><a href="#">Japan</a></p>
+					<p class="plain"><a href="#">Tibet</a></p>
+					<p class="plain"><a href="#">English Names</a></p>
+                </div>
+			</div>
+			<div class="col">
+                <p onclick="toggle('places');return false;"><a href="#">Places(+)</a></p>
+                <div id="places" style="display: none">
+					<p class="plain"><a href="#">India</a></p>
+					<p class="plain"><a href="#">Central Asia</a></p>
+					<p class="plain"><a href="#">China</a></p>
+					<p class="plain"><a href="#">Korea</a></p>
+					<p class="plain"><a href="#">Japan</a></p>
+					<p class="plain"><a href="#">Tibet</a></p>
+					<p class="plain"><a href="#">Nepal</a></p>
+					<p class="plain"><a href="#">Mongolia</a></p>
+					<p class="plain"><a href="#">Mythical</a></p>
+                </div>
+			</div>
+			<div class="col">
+                <p><a href="indexes/names.html">Names <i>(gods, buddhas, bodhisattvas, demons, etc.)</i></a></p>
+			</div>
+			<div class="col">
+                <p class="plain"><a href="indexes/ea-read-chooser.html">East Asian Readings</a></p>
+            </div>
+        </div>
+        <div class="section-content footer">
+	        <p class="plain">DDB Entry Total (2015/4/30): 63,912</p>
+        	<p>DDB-xml search engine © 2010 by Michael Beddow.</p>
+            <p>[non-members can log in with "guest"]</p>
+            <p><a href="#">Password Access Policies</a></p>
+        </div>
+    </section>
+    <section id="related">
+        <div class="section-content grid-2col">
+        	<div class="col">
+                <h3>Front Matter</h3>
+                <ul>
+                	 <li class="tight"><a href="#">Introduction</a> (<a target="_blank" href="http://www.buddhism-dict.net/ddb/papers/ddb-intro-ja.html">日本語</a>) / <a href="#">Password Access</a></li>
+                    <li><a href="../credits/credits-ddb.html">Collaborators and Contributors</a></li>
+                    <li><a href="#">How to Contribute</a></li>
+                    <li><a href="#">Subscribe to the DDB Newsletter</a></li>
+                    <li><a href="#">Subscribing Libraries</a></li>
+                    <li><a href="#">Citing the DDB and CJKV-E Dictionaries</a></li>
+                    <li><a href="#">Lexicographical and Canonical References</a></li>
+                    <li><a href="#">Comprehensive East Asian Buddhist Reference Works Combined Index Project ("Allindex")</a></li>
+                    <li><a href="#">Background Papers</a></li>
+                    <li><a href="#">Critique of Wikipedia</a></li>
+                </ul>
+            </div>
+        	<div class="col">
+	            <h3>External Resources: Lexical</h3>
+	            <ul>
+                    <li><a href="../dealt/index.html">CJKV-English Dictionary</a></li>
+                    <li><a target="_blank" href="http://www.l.u-tokyo.ac.jp/~b_kosha/start_index.html">Bauddhakośa</a> (Buddhist Terms Project)</li>
+                    <li><a target="_blank" href="http://www.uni-koeln.de/phil-fak/indologie/tamil/cap_search.html">Cologne Digital Sanskrit Lexicon</a></li>
+                    <li><a target="_blank" href="#">Monier-Williams</a> (local cache)</li>
+                    <li><a target="_blank" href="http://www.thlib.org/reference/dictionaries/tibetan-dictionary/translate.php">The Online Tibetan to English Dictionary and Translation Tool</a></li>
+                    <li><a target="_blank" href="http://tls.uni-hd.de/">Thesaurus Linguae Sericae</a> An Historical and Comparative Encyclopaedia of Chinese Conceptual Schemes</li>
+                    <li><a target="_blank" href="http://www.nitartha.org/dictionary_searchback.html">Nitartha Tibetan-English Dictionary</a></li>
+                    <li><a target="_blank" href="http://dsal.uchicago.edu/dictionaries/pali/">Pali-English Dictionary (Pali Text Society)</a></li>
+                </ul>
+        	</div>
+        	<div class="col clearfix">
+        	</div>
+        	<div class="col">
+	            <h3>External Resources: Textual Databases and Collections</h3>
+	            <ul>
+                    <li><a target="_blank" href="http://21dzk.l.u-tokyo.ac.jp/SAT/index.html">SAT <span style="font-style: italic">Taishō shinshū daizōkyō</span></a> (Japan&#x2014;<span>linked with DDB</span>)</li>
+                    <li><a target="_blank" href="http://www.cbeta.org">CBETA (Taishō plus other collections)</a></li>
+                    <li><a target="_blank" href="http://www.sutra.re.kr/">Korean Tripitaka</a></li>
+                    <li><a target="_blank" href="http://ebti.dongguk.ac.kr">Korean Buddhism: Collected Works</a> (<span style="font-style: italic">Hanguk bulgyo jeonseo</span>)</li>
+                    <li><a target="_blank" href="http://iriz.hanazono.ac.jp">IRIZ Zen Texts</a> (Hanazono University)</li>
+                    <li><a target="_blank" href="https://www2.hf.uio.no/polyglotta/index.php?page=library&amp;bid=2
+">Thesaurus Literaturae Buddhicae</a> (Jens Braarvig)</li>
+                </ul>
+        	</div>
+        	<div class="col">
+	            <h3>External Resources: Searchable Article and Bibliographical Databases</h3>
+	            <ul>
+                    <li><a target="_blank" href="http://21dzk.l.u-tokyo.ac.jp/SAT/index.html">SAT <span style="font-style: italic">Taishō shinshū daizōkyō</span></a> (Japan&#x2014;<span>linked with DDB</span>)</li>
+                    <li><a target="_blank" href="http://www.cbeta.org">CBETA (Taishō plus other collections)</a></li>
+                    <li><a target="_blank" href="http://www.sutra.re.kr/">Korean Tripitaka</a></li>
+                    <li><a target="_blank" href="http://ebti.dongguk.ac.kr">Korean Buddhism: Collected Works</a> (<span style="font-style: italic">Hanguk bulgyo jeonseo</span>)</li>
+                    <li><a target="_blank" href="http://iriz.hanazono.ac.jp">IRIZ Zen Texts</a> (Hanazono University)</li>
+                    <li><a target="_blank" href="https://www2.hf.uio.no/polyglotta/index.php?page=library&amp;bid=2
+">Thesaurus Literaturae Buddhicae</a> (Jens Braarvig)</li>
+                </ul>
+        	</div>
+        </div>
+    </section>
+	<footer>
+		<div class="section-content footer">
+			<p>Established July, 1995: updated monthly</p>
+            <p>Edited by <a target="_blank" href="http://www.acmuller.net">A. Charles Muller</a></p>
+            <p class="plain">Web Implementation by <a target="_blank" href="http://www.buddhism-dict.net/credits/beddow.html">Michael Beddow</a></p>
+            <p><!-- Created: Thu Jun 18 22:01:51 JST 2009 -->
+			<!-- hhmts start -->Last modified: Tue Jan 13 17:50:41 JST 2015 <!-- hhmts end --></p>
+		</div>
+	</footer>
+</body>
+</html>

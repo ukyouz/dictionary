@@ -1,0 +1,54 @@
+/* reset */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,pre,form,blockquote,img,article,aside,footer,header,nav,section,address,th {font-size: 1em; font-weight: normal; font-style: normal; margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+/* shared style */
+body {background: #eee;}
+body, input {line-height: 1.7; font-family: Times, "Yu Mincho", 游明朝體, serif;}
+header {background: #fff;}
+header div {padding: 1.7em 4%;}
+header h1, header a {text-decoration: none;}
+header a:hover {text-decoration: none;}
+aside ul {overflow: hidden;}
+aside li, aside li a {display: block;}
+#dict-link a {padding: 0.5em 0; text-align: center; color: #fff;}
+#dict-link #DDB {background: #4e8c57;}
+#dict-link #CJKV-E {background: #9b1305;}
+
+/*a.disabled {color: #aaa;}*/
+section, footer {padding: 1.5em 4%; background: #fff;}
+h1, h3, h4 {font-weight: bold;}
+h1 {font-size: 2em; line-height: 1.5;}
+h2 {font-size: 1.5em; margin: 0.6em 0;}
+section h2:first-child {margin-top: 0;}
+.entry h3 {margin-top:1.25em;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+.section-content, .wrap {clear: both; max-width: 980px; margin: auto;}
+.col {float: left;}
+.grid-2col, .grid-3col, .grid-5col {clear: both; overflow: hidden; position: relative;}
+.grid-2col .col {width: 46%; margin-right: 4%;}
+.grid-3col .col {width: 29%; margin-right: 4%;}
+.grid-5col .col {width: 16%; margin-right: 4%;}
+.col.clearfix {clear: both; height: 1.5em; width: 100%;}
+.red {color: red;}
+
+h1 {line-height: 1.5;}
+header div {padding: 1.7em 4%;}
+
+#pages p, #nav p, #nav li, .footer {text-align: left; font-size: 0.8em;}
+#pages {padding: 0.5em 4%;}
+#pages ~ #nav {background: none; padding-top: 1.5em;}
+#nav {padding: 0 2%;}
+#nav .wrap {background: #eee; padding: 0.5em 2%;}
+#nav li {display: inline-block; margin-right: 1em;}
+#nav li a {color: gray;}
+
+#comments p {
+	margin: 0.5em 0;
+}
+
+#related {background: #eee;}
+section .footer {margin-top: 1.7em; border-top: 1px solid silver; padding-top: 1.7em;}
+footer {background: #eee;}

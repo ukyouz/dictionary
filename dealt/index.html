@@ -1,0 +1,119 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>CJKV-English Dictionary</title>
+    <link rel="stylesheet" href="../css/shared.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/shared-dealt.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/button.css" type="text/css"/>
+    <script type="text/javascript">
+	//<![CDATA[
+	    function toggle(id) {
+	    	element = document.getElementById(id);
+	    	if (element.style.display == 'none') {
+				element.style.display = 'block'; 
+			} else {
+				element.style.display = 'none';
+			}
+	    }
+	    //]]>
+    </script>
+    <style>
+    	/* main style */
+    	h1 {font-size: 2.5em;}
+    	header {text-align: center; padding: 1.7em 0;}
+    	header div {padding: 0;}
+
+    	.grid-5col {overflow: visible;}
+    	.grid-5col .col {margin-bottom: 1.7em;}
+    	.grid-5col .col div {position: absolute; z-index: 9;}
+    	#dict-access {text-align: center;}
+    	#dict-access .col{text-align: left; position: relative;}
+    	#dict-access .col a {display: block; width: 100%;}
+    	#dict-access .col div {border: 1px solid silver; right: 0; left: 0; background: white; padding: 0 .5em; box-shadow: 0 0 10px #eee;}
+    </style>
+</head>
+<body>
+    <header>
+	    <div class="section-content">
+	        <h1>CJKV-English Dictionary</h1>
+	        <p>漢日韓越－英文 辭典</p>
+	        <p>A Dictionary of Sinitic Characters and Compounds<br>Related to East Asian Cultural, Political, and Intellectual History</p>
+	    </div>
+    </header>
+    <section id="dict-access">
+        <div class="section-content">
+            <form method="get" action="http://www.buddhism-dict.net/cgi-bin/search-dealt4.pl" onsubmit="if(this.Terms.value=='一'){this.action='/dealt/c4e00.html'};">
+                <input name="Terms" size="55" maxlength="200" required autofocus placeholder="一" value="一"/>
+                <input type="submit" value="Search" class="gbw"/>
+            </form>
+        </div>
+        <div class="section-content grid-5col">
+			<div class="col">
+                <p><a href="rad/index.html">Radical (部首)</a></p>
+			</div>
+			<div class="col">
+                <p class="tight"><a href="stroke/index.html">Total Strokes (總畫)</a></p>
+			</div>
+			<div class="col">
+                <p onclick="toggle('persons');return false;"><a href="#">Persons(+)</a></p>
+                <div id="persons" style="display: none">
+                    <p class="plain"><a href="#">China</a></p>
+                    <p class="plain"><a href="#">Korea</a></p>
+                    <p class="plain"><a href="#">Japan</a></p>
+                </div>
+			</div>
+			<div class="col">
+                <p onclick="toggle('places');return false;"><a href="#">Places(+)</a></p>
+                <div id="places" style="display: none">
+                    <p class="plain"><a href="#">China</a></p>
+                    <p class="plain"><a href="#">Korea</a></p>
+                    <p class="plain"><a href="#">Japan</a></p>
+                </div>
+			</div>
+			<div class="col">
+                <p class="plain"><a href="indexes/ea-read-chooser.html">East Asian Readings</a></p>
+            </div>
+        </div>
+        <div class="section-content footer">
+	        <p class="plain">CJKV-E Entry Total (2015/2/28): 41,041</p>
+        	<p>CJKV-E xml search engine 3.0 BETA © 2010 by Michael Beddow.</p>
+            <p>[non-members can log in with "guest"]</p>
+            <p><a href="#">Password Access Policies</a></p>
+        </div>
+    </section>
+    <section id="related">
+        <div class="section-content grid-2col">
+        	<div class="col">
+                <h3>Front Matter</h3>
+                <ul>
+	                <li class="tight"><a href="#">Introduction</a> / <a href="#">Password Access</a></li>
+	                <li class="tight"><a href="#">Subscribe to the CJKV-E Dictionary Newsletter</a></li>
+	                <li class="tight"><a href="#">Background Papers</a></li>
+	                <li class="tight"><a href="../credits/credits-cjkve.html">Credits</a></li>
+	                <li class="tight"><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        	<div class="col">
+	            <h3>External Resources</h3>
+	            <ul>
+	                <li><a target="_blank" href="http://www.csse.monash.edu.au/~jwb/cgi-bin/wwwjdic.cgi?1C">WWW JDic Server</a></li>
+	                <li><a target="_blank" href="http://www.smarthanzi.net">SmartHanzi Lookup and Text Parser</a></li>
+	                <li><a target="_blank" href="http://www.unicode.org/charts/unihan.html">Unihan CJKV Character Database Lookup</a></li>
+	                <li><a target="_blank" href="http://www.mdbg.net/chindict/chindict.php">MDBG Chinese-English Dictionary</a></li>
+	                <li><a href="..//ddb/index.html">Digital Dictionary of Buddhism</a></li>
+	                <li><a target="_blank" href="http://www.sinica.edu.tw/ftms-bin/ftmsw3">Academia Sinica Text Database</a></li>
+	            </ul>
+        	</div>
+        </div>
+    </section>
+	<footer>
+		<div class="section-content footer">
+			<p>Established July, 1995: updated monthly</p>
+            <p>Edited by <a target="_blank" href="http://www.acmuller.net">A. Charles Muller</a></p>
+            <p class="plain">Web Implementation by <a target="_blank" href="http://www.buddhism-dict.net/credits/beddow.html">Michael Beddow</a></p>
+            <p><!-- Created: Thu Jun 18 22:01:51 JST 2009 -->
+			<!-- hhmts start -->Last modified: Mon Jun 30 10:58:10 JST 2014 <!-- hhmts end --></p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+form {
+	padding:2px 1em;
+	border-right:1px solid #a5a5a5;
+	display:inline;
+}
+
+form:first-child {
+	padding-left:0;
+}
+
+form:last-child {
+	border:none;
+}
+
+input,textarea {
+	font-size:1em;
+	font-family:inherit;
+	border:1px solid #a5a5a5;
+	border-radius:3px;
+	margin:0;
+	outline:none;
+}
+
+input {
+	font-size:.8em;
+	padding:4px 6px 3px;
+	line-height:1.2;
+}
+
+#comments input {
+	font-size: 1em;
+}
+
+input[type = Submit],input[type = Reset] {
+	padding:4px 6px;
+	vertical-align:1px;
+}
+
+input[type = Text]:active,input[type = Text]:focus {
+	border-color:#4d90fe;
+}
+
+select {
+	font-size:1em;
+}
+
+input,select {
+	margin:0;
+}
+
+textarea {
+	padding:5px 6px;
+}
+
+textarea:active,textarea:focus {
+	border-color:#4d90fe;
+}
+
+footer input {
+	margin-bottom:.5em;
+}
+
+footer input,footer textarea {
+	font-size:1em;
+	padding:4px 6px;
+}
+
+footer input[type = Submit],footer input[type = Reset] {
+	font-size:1em;
+	padding:4px 12px;
+}
